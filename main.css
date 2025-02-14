@@ -1,0 +1,70 @@
+body,
+        p {
+            background-color: #060606;
+            color: white;
+        }
+
+        td,
+        tr,
+        tbody {
+            background-color: #060606;
+            color: white;
+        }
+
+        /* Custom CSS to fix messed up table colors */
+        .table>tfoot>tr>th,
+        .table>tfoot>tr>td {
+            border-top-color: rgb(108, 100, 88);
+        }
+
+        .table-striped tbody>tr:nth-child(2n+1)>td,
+        .table-striped tbody>tr:nth-child(2n+1)>th {
+            background-color: rgb(23, 25, 26);
+        }
+
+        .table-striped tbody>tr:nth-child(2n)>td,
+        .table-striped tbody>tr:nth-child(2n)>th {
+            background-color: #0f0f0f;
+        }
+
+        .table>tfoot>tr>th,
+        .table>tfoot>tr>td {
+            line-height: 1.42857;
+            vertical-align: top;
+            padding: 8px;
+            border-top: 1px solid rgb(40, 40, 40);
+        }
+
+        
+        ::-webkit-scrollbar {
+            background-color: #1b1e1f;
+            color: #918b82;
+        }
+
+        ::-webkit-scrollbar-corner {
+            background-color: #141617;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #3b3f41;
+        }
+
+
+input::-webkit-input-placeholder {
+  color: #B6C0A5; 
+  font-style: italic; 
+  background: #E0EFCA;
+}
+input:-moz-placeholder {
+  color: #B6C0A5; 
+  font-style: italic; 
+  background: #E0EFCA;
+}
+input:-ms-input-placeholder {
+  color: #B6C0A5; 
+  font-style: italic; 
+  background: #E0EFCA;
+}
+
+
+        
