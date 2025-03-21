@@ -1,3 +1,3 @@
-This site was intended for good purposes adding information to the site is completely permitted but we are not responsible for your actions, we only created this site to add information and we cannot condemn any of your actions.
+We do not take responsibility for your actions, we only post files, we are absolutely not responsible for the content of the file.
 
-Also, we can't do anything about your actions. 
+We do not take responsibility for your actions if you are in trouble
