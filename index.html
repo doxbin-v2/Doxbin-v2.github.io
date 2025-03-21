@@ -1,17 +1,11 @@
-
-<!DOCTYPE html code by mbs>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>Doxbin V2</title>
 
-   
 
-   
-    
-   
-
-<style>
+    <style>
         body,
         p {
             background-color: #060606;
@@ -49,7 +43,7 @@
             border-top: 1px solid rgb(40, 40, 40);
         }
 
-        
+
         ::-webkit-scrollbar {
             background-color: #1b1e1f;
             color: #918b82;
@@ -62,11 +56,20 @@
         ::-webkit-scrollbar-thumb {
             background-color: #3b3f41;
         }
+
+        /* Style for search input */
+        #searchInput {
+            background-color: #0f0f0f;
+            color: white;
+            border: 1px solid rgb(40, 40, 40);
+            padding: 8px;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box; /* To include padding in width */
+        }
     </style>
- 
-   
-    
- 
+
+
 </head>
 
 <body>
@@ -75,14 +78,13 @@
 
 
 
-  <style>
-   .fig {
-    text-align: center; 
-   }
-  </style>
- </head>
- <body>
- 
+    <style>
+        .fig {
+            text-align: center;
+        }
+    </style>
+
+
   <pre style="font: 4px/2px monospace; background-color: #060606; overflow-x: hidden; overflow-y: hidden; border: none; color: white; text-align: center;">
                                              .                                                                                          .                                            
                                             .#                                                                                          #.                                           
@@ -191,11 +193,8 @@
        :@@,       @@  `@@@#@@@@             @#                                      .@         +@                                      .@`            @@@@@@@@,  ;@        @@@       
         @@@       +@    #@@@@@@@           ;@                                        @`        @,                                       '@           ;@@@@@@@`   ;@       .@@+       
         @@@       `@     ,@@@@@@'          @                                         @         @`                                        #.          @@@@@@+     ##       @@@        
-        +@@        @       '@@@@@.        ;`                                         @         @                                               @         @@@@@@`      @`       @@@        
+        +@@        @       '@@@@@.        ;`                                         @         @                                          @         @@@@@@`      @`       @@@        
         `@@+       +        ;@@@@@        ;                                          @         :                                           `       #@@@@@        @        @@@        
-         @
-+@@        @       '@@@@@.        ;`                                         @         @                                                  @         @@@@@@`      @`       @@@        
-        `@@+       +        ;@@@@@        ;                                          @         :                                                `       #@@@@@        @        @@@        
          @@@        ,        :@@@@+      ,                                           @                                                     .       @@@@@         +       '@@.        
          @@@        #         ;@@@@                                                  .                                                            @@@@@         `        @@@         
          .@@'       ,          @@@@.                                                                                                              @@@@          ;        @@@         
@@ -300,17 +299,16 @@
                                                                              ,@@@@@@@@@@#####@@@@@@@@@@@                                                                             
                                                                               `@@@@@@@@@@@@@@@@@@@@@@@;                                                                              
                                                                                 `@@@@@@@@@@@@@@@@@@@:                                                                                
-                        </pre>
+                                                                                                                              
+</pre>
 
-
-
-    <div class="col-md-12">
+<div class="col-md-12">
         <div class="col-md-12" style="margin-top: 60px;float:none;">
             <div align="center">
 
                 <pre
                     style="font: 4px/6px monospace; background-color: #060606; overflow-x: hidden; overflow-y: hidden; border: none; color: white;">
-             
+
                 </pre>
 
                 <h5 class="announcement a-1" style="color:#00AAFF;">
@@ -321,19 +319,19 @@
                     </u>
                 </h5>
 
-<h5 class="announcement a-1" style="color:#00AAFF;">
+                <h5 class="announcement a-1" style="color:#00AAFF;">
                     <u>
                         <a style="color:inherit;" href="addinfo.html">
-                            add information 
+                            add information
                         </a>
                     </u>
                 </h5>
 
 
-<h5 class="announcement a-1" style="color:#00AAFF;">
+                <h5 class="announcement a-1" style="color:#00AAFF;">
                     <u>
                         <a style="color:inherit;" href="rules.md">
-                            rules 
+                            rules
                         </a>
                     </u>
                 </h5>
@@ -346,14 +344,14 @@
                 <h5 class="announcement a-2" style="color:#08EFFF;">
                     <u>
                         <a style="color:inherit;" href="https://t.me/+eD7dNtINV7k5NDMy">
-                           telegram official 
+                            telegram official
                         </a>
                     </u>
                 </h5>
 
 
-                
-                            
+
+
                         </a>
                     </u>
                 </h5>
@@ -364,15 +362,13 @@
         </div>
 
         <div class="col-md-7" style="float:none;margin:auto;padding:0;">
-            
-  
 
-
+            <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search Titles..." />
 
 
             <h6 style="margin-top: 14px; color: white;">Public Pastes</h6>
-            
-            <table class="table table-striped table-hover" style="margin-top: 0px;">
+
+            <table class="table table-striped table-hover" style="margin-top: 0px;" id="pastesTable">
                 <thead>
                     <tr>
                         <th colspan="3">Title</th>
@@ -385,12 +381,7 @@
                     </tr>
                 </thead>
                 <tbody>
-
-
-                    
-
-
-<td colspan="3" style="overflow: hidden;text-overflow: ellipsis;">
+                    <td colspan="3" style="overflow: hidden;text-overflow: ellipsis;">
                             <a title="RE UPLOAD lethal 0001 aka catboybailey"
                                 href="79015315707.txt">
                                 79015315707
@@ -684,87 +675,39 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </tbody>
-            </table>
         </div>
     </div>
-    
-    <div class="center">
-        <a href="#">Back to top</a>
-        <br><br>
-    </div>
 
+    <script>
+        function searchTable() {
+            var input, filter, table, tbody, tr, td, i, j, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("pastesTable");
+            tbody = table.getElementsByTagName("tbody")[0];
+            tr = tbody.getElementsByTagName("tr");
 
-
-
-
-
-
+            for (i = 0; i < tr.length; i++) {
+                let rowVisible = false; // Assume row is not visible initially
+                for (j = 0; j < tr[i].cells.length; j++) {
+                    td = tr[i].cells[j];
+                    if (td) {
+                        txtValue = td.textContent || td.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            rowVisible = true; // Row contains search term, mark as visible
+                            break; // No need to check other cells in this row
+                        }
+                    }
+                }
+                if (rowVisible) {
+                    tr[i].style.display = ""; // Show the row
+                } else {
+                    tr[i].style.display = "none"; // Hide the row
+                }
+            }
+        }
+    </script>
 
 </body>
 
 </html>
-
